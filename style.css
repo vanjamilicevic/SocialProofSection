@@ -1,17 +1,146 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League Spartan:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-  box-sizing: border-box;
-  margin: 0;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+    font-family: "League Spartan";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: rgb(245, 240, 233);
+}
+
+.main-container {
+    background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+    background-position: top left, bottom, right;
+    background-repeat: no-repeat;
+    max-width: 1500px;
+    margin: auto;
+    background-color: white;
+    padding: 150px;
+    padding-top: 100px;
+}
+
+.description-and-rates-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.tile-and-description-container {
+    width: 35%;
+}
+
+.ratings-container {
+    width: 50%;
+}
+
+.title {
+    color: #512051;
+    font-size: 56px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+}
+
+.description {
+    color: #927B91;
+    font-size: 19px;
+    line-height: 25px;
+    letter-spacing: -0.63px;
+    font-weight: 500;
+}
+
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.stars-and-rating-text {
+    display: flex;
+    background-color: #F7F2F7;
+    margin-bottom: 20px;
+    width: 70%;
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.center {
+    align-self: center;
+}
+
+.right {
+    align-self: flex-end;
+}
+
+.stars {
+    margin-right: 30px;
+}
+
+.star {
+    margin-right: 5px;
+}
+
+.rating-text {
+    color: #512051;
+    font-size: 17px;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #512051;
+    max-width: 31%;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.image-and-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    width: fit-content;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.image {
+    border-radius: 50px;
+    width: 50px;
+}
+
+.name {
+    color: white;
+    font-size: 17px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.verified {
+    color: #EE69A4;
+    font-size: 17px;
+}
+
+.user-review {
+    color: white;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+    font-weight: 500;
 }
